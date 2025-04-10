@@ -1,12 +1,23 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Project } from './models/project.model';
+import { RouterModule } from '@angular/router';
+import { ProjectService } from './services/project.service';
+import { HeaderComponent } from "./header/header.component";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  imports: [HeaderComponent,RouterModule,CommonModule]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'portfolio';
+  projects: Project[] = [];
+
+  constructor(private projectService: ProjectService) {}
+
+  ngOnInit(): void {
+    this.projectService.getProjects().subscribe(data => this.projects = data);
+  }
 }

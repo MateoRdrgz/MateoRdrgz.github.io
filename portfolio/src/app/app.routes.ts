@@ -1,3 +1,8 @@
 import { Routes } from '@angular/router';
+import { ProjectComponent } from './project/project.component';
+import { AppComponent } from './app.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: '', component: AppComponent }, // Route par défaut
+  { path: 'project/:id', component: ProjectComponent } // Route pour les projets
+];

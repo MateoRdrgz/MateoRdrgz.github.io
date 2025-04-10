@@ -1,0 +1,8 @@
+.module-block {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.module-block.visible {
+  opacity: 1;
+}
