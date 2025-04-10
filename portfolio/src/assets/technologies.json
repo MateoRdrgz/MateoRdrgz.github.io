@@ -1,0 +1,8 @@
+{
+    "Angular": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/angular.svg",
+    "TypeScript": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/typescript.svg",
+    "SCSS": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/sass.svg",
+    "Symfony": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/symfony.svg",
+    "PHP": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/php.svg",
+    "MySQL": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/mysql.svg"
+  }

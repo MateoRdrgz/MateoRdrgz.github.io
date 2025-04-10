@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<!-- Section d’introduction -->
+<section class="intro">
+  <div class="intro-content">
+    <img src="assets/images/profile.jpg" alt="Photo de profil" class="profile-picture" />
+    <h1>Mateo Rodriguez</h1>
+    <p class="role">Développeur Fullstack</p>
+    <p class="location">Basé à Bourg-En-Bresse, France</p>
+    <p class="tagline">Développeur Fullstack Angular & .NET</p>
+    <div class="buttons">
+      <a href="https://www.linkedin.com/in/mateo-rodriguez-068245250" class="btn" target="_blank">📩 Linkedin</a>
+      <a href="assets/CV.pdf" target="_blank" class="btn">📄 CV</a>
+    </div>
+  </div>
+</section>
+
+<div class="grid">
+  <div *ngFor="let project of projects" class="card">
+    <img [src]="project.image" alt="{{ project.title }}" />
+    <div class="content">
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.description }}</p>
+      <div class="techno">
+        <span *ngFor="let tech of project.techno" class="tech-item">
+          <img [src]="getIcon(tech)" [alt]="tech" class="tech-icon" />
+          {{ tech }}
+        </span>
+      </div>
+      <a [routerLink]="project.link">Voir plus</a>
+    </div>
+  </div>
+</div>

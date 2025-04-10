@@ -1,17 +1,18 @@
 [
-    {
-      "id": 1,
-      "title": "Projet 1",
-      "description": "Description du projet 1",
-      "image": "assets/images/projet1.jpg",
-      "link": "/project/1"
-    },
-    {
-      "id": 2,
-      "title": "Projet 2",
-      "description": "Description du projet 2",
-      "image": "assets/images/projet2.jpg",
-      "link": "/project/2"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Projet 1",
+    "description": "Description du projet 1",
+    "image": "assets/images/echec.png",
+    "link": "/project/1",
+    "techno": ["Angular", "TypeScript", "SCSS"]
+  },
+  {
+    "id": 2,
+    "title": "Projet 2",
+    "description": "Description du projet 2",
+    "image": "assets/images/projet2.jpg",
+    "link": "/project/2",
+    "techno": ["Symfony", "PHP", "MySQL"]
+  }
+]

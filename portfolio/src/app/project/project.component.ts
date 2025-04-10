@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.css'],
+  styleUrls: ['./project.component.scss'],
   imports: [CommonModule, RouterModule, HttpClientModule], // Importez HttpClientModule ici
 })
 export class ProjectComponent implements OnInit {
